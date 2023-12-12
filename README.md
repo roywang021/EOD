@@ -17,4 +17,9 @@ As we utilize the Detectron2 framework, shared with Opendet, the essential code 
 
 3. Make modifications and adaptations as needed.
 
-
+### Train and Test
+#### Training
+The training process is the same as detectron2 and Opendet.
+```bash
+python tools/train_net.py --num-gpus 8 --config-file configs/faster_rcnn_R_50_FPN_3x_EOD.yaml
+```
