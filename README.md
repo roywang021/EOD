@@ -24,7 +24,7 @@ The training process is the same as Detectron2 and Opendet.
 python tools/train_net.py --num-gpus 8 --config-file configs/faster_rcnn_R_50_FPN_3x_EOD.yaml
 ```
 #### Testing
-We provide the model weights used in experiments for testing.
+Run the following command for testing.
 ```bash
 python tools/train_net.py --num-gpus 8 --config-file configs/faster_rcnn_R_50_FPN_3x_EOD.yaml --eval-only MODEL.WEIGHTS output/faster_rcnn_R_50_FPN_3x_EOD/model_test.pth
 ```
