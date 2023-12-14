@@ -1,1 +1,1 @@
-Model weights will be released in the coming future.
+The model weights used in the experiment will be released in the coming future.
