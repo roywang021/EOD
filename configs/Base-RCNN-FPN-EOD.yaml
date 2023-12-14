@@ -1,0 +1,12 @@
+_BASE_: "./Base-RCNN-FPN.yaml"
+MODEL:
+  MASK_ON: False
+  ROI_HEADS:
+    NAME: "OpenSetStandardROIHeads"
+    NUM_CLASSES: 81
+    NUM_KNOWN_CLASSES: 20
+    UNCERTAINTY_THR: 0.5
+  ROI_BOX_HEAD:
+    NAME: "FastRCNNSeparateConvFCHead"
+    OUTPUT_LAYERS: "EvidentialOutputLayers"
+    CLS_AGNOSTIC_BBOX_REG: True
